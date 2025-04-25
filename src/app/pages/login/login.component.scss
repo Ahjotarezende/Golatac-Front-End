@@ -1,0 +1,55 @@
+@use "../../../styles/variables";
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    button {
+        width: 100%;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        color: white;
+        background-color: variables.$primary-color;
+        padding: 12px 24px;
+        box-shadow: 0px 8px 12px rgba(9, 74, 255, 0.2);
+        cursor: pointer;
+        margin-top: 41px;
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: default;
+        }
+    }
+
+    label {
+        font-size: 12px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    input {
+        border: none;
+        background-color: #F1F3F6;
+        border-radius: 8px 0px 0px 8px;
+        padding: 12px;
+        margin-bottom: 23px;
+        color: #555;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    img {
+        margin-left: -8px;
+        padding: 12px;
+        width: 44px;
+        height: 44px;
+        background-color: variables.$primary-color;
+        border-radius: 8px;
+    }
+}

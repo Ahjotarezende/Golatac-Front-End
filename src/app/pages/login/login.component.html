@@ -1,0 +1,15 @@
+<app-login-form>
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+        <label for="email">Endereço de E-mail</label>
+        <div style="display: flex; width: 100%;">
+            <input id="email" formControlName="email" type="email" placeholder="foo@example.com">
+            <img src="/assets/EmailIcon.svg" alt="emailIcon">
+        </div>
+        <label for="password">Senha</label>
+        <div style="display: flex; width: 100%;">
+            <input id="password" formControlName="password" type="password" placeholder="Digite sua senha">
+            <img src="/assets/PasswordIcon.svg" alt="passwordIcon">
+        </div>
+        <button [disabled]="!loginForm.valid">Realizar Login</button>
+    </form>
+</app-login-form>
